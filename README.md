@@ -1,2 +1,2 @@
 # the-quiz
-Projeto de estudantes do Cefet-MG que visa fazer perguntas e respostas utilizando JavaScript.
+Projeto de trabalho prático de programação web do CEFET-MG. 
