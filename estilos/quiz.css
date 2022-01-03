@@ -22,7 +22,7 @@
     overflow: hidden;
 }
 
-#progressoBarraFull {
+#progressoBarraComp {
     height: 100%;
     width: 0%;
     background: rgb(160, 0, 0);
@@ -49,9 +49,10 @@
     min-width: 80rem;
 }
 
-p {
+p, #pergunta {
     font-size: 3rem;
 }
+
 
 .containerEscolha:hover {
     cursor: pointer;
