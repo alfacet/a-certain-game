@@ -1,0 +1,76 @@
+/*HUD*/
+#hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.texto-principal {
+    text-align: center;
+}
+
+#progressoBarra {
+    width: 20rem;
+    height: 3rem;
+    border: 2px solid rgb(160, 0, 0);
+    border-radius: 5rem;
+    overflow: hidden;
+}
+
+#progressoBarraFull {
+    height: 100%;
+    width: 0%;
+    background: rgb(160, 0, 0);
+}
+
+
+
+/*RESPONSIVIDADE*/
+@media screen and (max-width: 1500px) {
+    .containerEscolha {
+        width: 60rem;
+    }
+}
+
+
+/*FIM*/
+
+.containerEscolha {
+    display: flex;
+    margin-bottom: 0.8rem;
+    width: 100%;
+    border-radius: 4px;
+    background-color: rgb(160, 0, 0);
+    min-width: 80rem;
+}
+
+p {
+    font-size: 3rem;
+}
+
+.containerEscolha:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgb(160, 0, 0);
+    transition: transform 100ms;
+    transform: scale(1.04);
+}
+
+.containerPergunta {
+    color: whitesmoke;
+}
+
+.containerletra {
+    padding: 2rem;
+    color: whitesmoke;
+}
+
+.containerPergunta {
+    padding: 2rem;
+    width: 100%;
+}
+
