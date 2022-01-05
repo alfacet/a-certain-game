@@ -44,18 +44,3 @@ let perguntas = [ //array de objetos para as perguntas feitas no quiz
         resposta = 4,
     }
 ]
-
-const SCORE_P = 100;
-const MAX = 4;
-
-start = () => {
-    cont = 0
-    score = 0
-    perguntasDisp = [...perguntas]
-    novaPergunta()
-}
-
-novaPergunta = () => {
-    if (perguntasDisp.length == 0 || cont > MAX);
-        //webstorage//
-}
