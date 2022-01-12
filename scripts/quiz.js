@@ -1,4 +1,4 @@
-let BancodePerguntas = [
+let bancoDePerguntas = [
     {
         nPergunta: 1,
         pergunta: 'Qual a cor do céu?',
@@ -363,7 +363,6 @@ let BancodePerguntas = [
 ];
 
 //API que gera número de 0 49
-
 let numeroJaSorteados = [];
 let numeroAtual = -1;
 let nPerguntas = [];
@@ -374,7 +373,7 @@ function getRandomIntInclusive() {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function sortearpergunta() {
+function sortearPergunta() {
     if (numeroAtual = -1){
         numeroAtual = getRandomIntInclusive();
         numeroJaSorteados.push(numeroAtual);
@@ -395,18 +394,18 @@ function verificarRepetição(nmr_A)
         }
         cont++;
     }
-    if(cont == numeroJaSorteados.length){
+    if (cont == numeroJaSorteados.length){
         nPerguntas.push(nmr_A);
         numeroJaSorteados.push(nmr_A);
     }
 }
 
 for(let i = 0; i < 10; i++){
-    sortearpergunta();
+    sortearPergunta();
 }
 
 
-Pergunta_atual = document.querySelector('#pergunta');
-console.log(Pergunta_atual);
+pergunta_atual = document.querySelector('#pergunta');
+console.log(pergunta_atual);
 
-Pergunta_atual.innerHTML = BancodePerguntas[nPerguntas[0]].pergunta;
+pergunta_atual.innerHTML = bancoDePerguntas[nPerguntas[0]].pergunta;
