@@ -384,8 +384,7 @@ function sortearPergunta() {
     verificarRepetição(numeroAtual);
 }
 
-function verificarRepetição(nmr_A)
-{
+function verificarRepetição(nmr_A) {
     for (let i = 0; i < numeroJaSorteados.length; i++) {
         let cont = 0;
         if (nmr_A == numeroJaSorteados[i]) {
@@ -400,7 +399,7 @@ function verificarRepetição(nmr_A)
     }
 }
 
-for(let i = 0; i < 10; i++){
+for (let i = 0; i < 10; i++){
     sortearPergunta();
 }
 
@@ -409,3 +408,19 @@ pergunta_atual = document.querySelector('#pergunta');
 console.log(pergunta_atual);
 
 pergunta_atual.innerHTML = bancoDePerguntas[nPerguntas[0]].pergunta;
+
+
+//função que aplica nova questão
+const max = 40;
+
+start = () => {
+    cont = 0;
+    pontos = 0;
+    questoes = bancoDePerguntas;
+}
+
+gerarPergunta = () => {
+    if (bancoDePerguntas.length = 0 || cont > max) {
+        localStorage.setItem('pontos', pontos);
+    }
+}
