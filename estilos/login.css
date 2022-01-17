@@ -1,0 +1,60 @@
+html {
+    background-image: url("https://www.launch-marketing.com/wp-content/uploads/2012/01/GettyImages-1127556731.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.login {
+    overflow: hidden;
+    background-color: white;
+    padding: 40px 30px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px darkgreen;
+}
+
+.login input {
+    display: block;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    font-size: 16px;
+    background: white;
+    width: 100%;
+    border: 0;
+    padding: 10px 10px;
+    margin: 15px -10px;
+    position: relative;
+	padding: 10px;
+}
+    
+.login button {
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    width: 80px;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: darkgreen;
+}
+
+.logar {
+    display: flex;
+    justify-content: left;
+}
+
+.registrar {
+    margin-top: 15px;
+    color: white;
+    font-size: 13px;
+}
+
+.login-incorreto p{
+    background-color: white;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px darkgreen;
+}
