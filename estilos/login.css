@@ -6,10 +6,17 @@ html {
     height: 100%;
 }
 
+
+.login h1 {
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .login {
     overflow: hidden;
     background-color: white;
-    padding: 40px 30px 30px 30px;
+    padding: 64px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px darkgreen;
 }
@@ -17,12 +24,10 @@ html {
 .login input {
     display: block;
     border-radius: 5px;
-    border-color: black;
-    border-width: 1px;
+    border-width: 0px;
     font-size: 16px;
     background: white;
     width: 100%;
-    border: 0;
     padding: 10px 10px;
     margin: 15px -10px;
     position: relative;
@@ -31,18 +36,21 @@ html {
     
 .login button {
     cursor: pointer;
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 20px;
     width: 80px;
     padding: 10px 0;
-    margin-top: 10px;
-    border-radius: 5px;
-    background-color: darkgreen;
+    border: 0;
+    background-color: white;
 }
 
 .logar {
     display: flex;
-    justify-content: left;
+    justify-content: center;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 2px;
+    border-style: dashed;
 }
 
 .registrar {
@@ -54,7 +62,7 @@ html {
 .login-incorreto p{
     background-color: white;
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     border-radius: 5px;
-    box-shadow: 3px 3px 3px darkgreen;
+    box-shadow: 3px 3px 3px rgba(255, 0, 0, 0.685);
 }

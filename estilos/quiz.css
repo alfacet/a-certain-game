@@ -1,70 +1,49 @@
-/*HUD*/
-#hud {
+#intro {
     display: flex;
     justify-content: space-between;
 }
-
-.hud-prefix {
+  
+.prefix {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
 }
-
-.texto-principal {
+  
+#counter,
+#score {
     text-align: center;
 }
 
-#progressoBarra {
-    width: 20rem;
-    height: 3rem;
-    border: 2px solid rgb(160, 0, 0);
-    border-radius: 5rem;
-    overflow: hidden;
-}
-
-#progressoBarraComp {
-    height: 100%;
-    width: 0%;
-    background: rgb(160, 0, 0);
-}
-
-
-
-/*RESPONSIVIDADE*/
-
-
-/*FIM*/
-
-.containerEscolha {
+.escolha {
     display: flex;
     margin-bottom: 0.8rem;
     width: 100%;
     border-radius: 4px;
-    background-color: rgb(160, 0, 0);
+    background-color: whitesmoke;
     min-width: 80rem;
 }
 
-p, #pergunta {
+p, #pergunta-questao {
     font-size: 3rem;
 }
 
 
-.containerEscolha:hover {
+.escolha:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgb(160, 0, 0);
     transition: transform 100ms;
     transform: scale(1.04);
 }
 
-.containerPergunta {
-    color: whitesmoke;
+.pergunta {
+    color: rgb(32, 32, 32);
 }
 
-.containerletra {
+.prefixo {
+    background-color: rgb(111, 0, 255);
     padding: 2rem;
     color: whitesmoke;
 }
 
-.containerPergunta {
+.pergunta {
     padding: 2rem;
     width: 100%;
 }
