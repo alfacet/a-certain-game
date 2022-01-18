@@ -1,20 +1,182 @@
 [
-    {
-       "id":1,
-       "pergunta":"1 + 1?",
-       "a":"2",
-       "b":"4",
-       "c":"0",
-       "d":"1",
-       "resposta":"a"
-    },
-    {
+  {
+      "id" : 1,
+      "pergunta": "Quais o menor e o maior país do mundo?",
+      "a": "Vaticano e Rússia",
+      "b": "Nauru e China",
+      "c": "Mônaco e Canadá",
+      "d": "Rússia e União dos Complexos do Rio de Janeiro",
+      "resposta": "a"
+  },
+  {
       "id": 2,
+      "pergunta": "Qual é o maior país do mundo?",
+      "a": "Brasil",
+      "b": "Japão",
+      "c": "Japão",
+      "d": "Rússia",
+      "resposta": "d"
+  },
+  {
+      "id" : 3,
+      "pergunta": "Quantos mundiais o Palmeiras tem?",
+      "a": "-1",
+      "b": "Nenhum",
+      "c": "6",
+      "d": "Palmeiras não é time",
+      "resposta": "b"
+  },
+  {
+      "id" : 4,
+      "pergunta": "Quantas Copas do mundo o Brasil tem?",
+      "a": "4",
+      "b": "6",
+      "c": "Nenhum",
+      "d": "5",
+      "resposta": "d"
+  },
+  {
+      "id" : 5,
+      "pergunta": "Em que ano o Brasil foi Tetracampeão",
+      "a": "1998",
+      "b": "2002",
+      "c": "1994",
+      "d": "1962",
+      "resposta": "c"
+  },
+  {
+      "id" : 6,
+      "pergunta": "Qual o livro mais vendido no mundo a seguir à Bíblia?",
+      "a": "A Bíblia 2",
+      "b": "O Senhor dos Aneis",
+      "c": "Dom Quixote",
+      "d": "Um Conto de Duas Cidades",
+      "resposta": "c"
+  },
+  {
+      "id" : 7,
+      "pergunta": "Quantas casas decimais tem o número pi?",
+      "a": "13",
+      "b": "Infinitas",
+      "c": "69",
+      "d": "101",
+      "resposta": "b"
+  },
+  {
+      "id" : 8,
+      "pergunta": "Atualmente, quantos elementos químicos a tabela periódica possui?",
+      "a": "70",
+      "b": "100",
+      "c": "118",
+      "d": "212",
+      "resposta": "c"
+  },
+  {
+      "id" : 9,
+      "pergunta": "O que a palavra legend significa em português?",
+      "a": "Tenda",
+      "b": "Legenda",
+      "c": "Londrina",
+      "d": "Lenda",
+      "resposta": "d"
+  },
+  {
+      "id" : 10,
+      "pergunta": "Qual o número mínimo de jogadores numa partida de futebol?",
+      "a": "7",
+      "b": "8 jogadores e meio",
+      "c": "2 atacantes 1 goleiro e 2 gandulas",
+      "d": "11",
+      "resposta": "a"
+  },
+  {
+      "id" : 11,
+      "pergunta": "Quem foi o primeiro presidente dos Estados Unidos?",
+      "a": "Donald Trump",
+      "b": "George Washington",
+      "c": "Abraham Lincoln",
+      "d": "Lula",
+      "resposta": "b"
+  },
+  {
+      "id" : 12,
+      "pergunta": "Quantas bolas de ouro o Cristiano Ronaldo tem?",
+      "a": "4",
+      "b": "5",
+      "c": "7",
+      "d": "3",
+      "resposta": "b"
+  },
+  {
+      "id" : 13,
+      "pergunta": "Que país tem o formato de uma bota?",
+      "a": "Nenhum",
+      "b": "Portugal",
+      "c": "República Democrática Popular do Congo",
+      "d": "Itália",
+      "resposta": "d"
+  },
+  {
+      "id": 14,
+      "pergunta": "Qual a nacionaliade de Che Guevara?",
+      "a": "Peruana",
+      "b": "Brasileira",
+      "c": "Boliviana",
+      "d": "Argentina",
+      "resposta": "d"
+  },
+  {
+      "id": 15,
+      "pergunta": "Qual o maior animal terrestre?",
+      "a": "Baleia Azul",
+      "b": "Elefante Africano",
+      "c": "Tubarão Branco",
+      "d": "Girafa",
+      "resposta": "b"
+  },
+  {
+      "id"  : 16,
+      "pergunta": "Que animal gruguleja?",
+      "a": "Passarinho",
+      "b": "Peru",
+      "c": "Leão",
+      "d": "Cacatua",
+      "resposta": "b"
+  },
+  {
+      "id"  : 17,
       "pergunta": "Quem pintou o quadro Mona Lisa?",
       "a": "Alejadinho",
       "b": "Leonardo Da Vinci",
       "c": "Vincent Van Gogh",
       "d": "Rafael Sanzio",
       "resposta": "b"
-    }
+  },
+  {
+      "id": "18",
+      "pergunta": "Quem foi o vencedor do Big Brother Brasil 20?",
+      "a": "Prior",
+      "b": "Thelma Assis",
+      "c": "Petrix",
+      "d": "Hadballa",
+      "resposta": "b"
+  },
+  {
+      "id" : 19,
+      "pergunta": "Qual fruta envenenada comeu a Branca de Neve?",
+      "a": "Uva",
+      "b": "Jaca",
+      "c": "Maça",
+      "d": "Tomate",
+      "resposta": "c"
+  },
+  {
+      "id": 20,
+      "pergunta": "Qual a montanha mais alta do Brasil?",
+      "a": "Pico Paraná",
+      "b": "Monte Roraima",
+      "c": "Pico da Neblina",
+      "d": "Pico da Bandeira",
+      "resposta": "c"
+  }
 ]
