@@ -3,13 +3,14 @@
     justify-content: space-between;
 }
   
-.prefix {
+.ant {
     text-align: center;
     font-size: 3rem;
+    color: whitesmoke;
 }
   
-#counter,
-#score {
+#contador,
+#pontos {
     text-align: center;
 }
 
@@ -33,7 +34,7 @@ p, #pergunta-questao {
     transform: scale(1.04);
 }
 
-.pergunta {
+.resposta {
     color: rgb(32, 32, 32);
 }
 
@@ -43,8 +44,7 @@ p, #pergunta-questao {
     color: whitesmoke;
 }
 
-.pergunta {
+.resposta {
     padding: 2rem;
     width: 100%;
 }
-

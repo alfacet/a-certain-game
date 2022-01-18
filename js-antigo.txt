@@ -1,0 +1,45 @@
+let numeroJaSorteados = [];
+let numeroAtual = -1;
+let nPerguntas = [];
+
+function getRandomIntInclusive() {
+    let min = Math.ceil(0);
+    let max = Math.floor(40);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function sortearPergunta() {
+    if (numeroAtual = -1){
+        numeroAtual = getRandomIntInclusive();
+        numeroJaSorteados.push(numeroAtual);
+        nPerguntas.push(numeroAtual);
+        return;
+    }
+    numeroAtual = getRandomIntInclusive();
+    verificarRepetição(numeroAtual);
+}
+
+function verificarRepetição(nmr_A) {
+    for (let i = 0; i < numeroJaSorteados.length; i++) {
+        let cont = 0;
+        if (nmr_A == numeroJaSorteados[i]) {
+            nmr_A == getRandomIntInclusive();
+            verificarRepetição();
+        }
+        cont++;
+    }
+    if (cont == numeroJaSorteados.length){
+        nPerguntas.push(nmr_A);
+        numeroJaSorteados.push(nmr_A);
+    }
+}
+
+for (let i = 0; i < 10; i++){
+    sortearPergunta();
+}
+
+
+pergunta_atual = document.querySelector('#pergunta');
+console.log(pergunta_atual);
+
+pergunta_atual.innerHTML = bancoDePerguntas[nPerguntas[0]].pergunta;
