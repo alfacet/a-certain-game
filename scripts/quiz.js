@@ -34,7 +34,7 @@ startQuiz = () => {
 const perguntaAleatoria = (objeto, n) => {
     if (n > objeto.length) {
       throw new RangeError(
-        "perguntaAleatoria: mais elementos do que disponiveis"
+        "perguntaAleatoria: mais perguntas do que disponiveis"
       );
     }  //acontecerá o erro de "memoria aplicada", por assim dizer
   
