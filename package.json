@@ -1,0 +1,28 @@
+{
+  "name": "nome-temporario",
+  "version": "1.0.0",
+  "description": "Projeto de trabalho prático de programação web do CEFET-MG.",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alfacet/nome-temporario.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alfacet/nome-temporario/issues"
+  },
+  "homepage": "https://github.com/alfacet/nome-temporario#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
