@@ -1,6 +1,7 @@
 [
   {
       "id" : 1,
+      "dificuldade": 2,
       "pergunta": "Qual o menor e o maior país do mundo?",
       "a": "Vaticano e Rússia",
       "b": "Nauru e China",

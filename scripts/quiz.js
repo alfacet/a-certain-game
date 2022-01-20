@@ -8,7 +8,6 @@ function arquivoJson() {
   
 let perguntas = JSON.parse(arquivoJson());
   
-
 const perguntaEl = document.getElementById("pergunta-questao");
 const respostasEl = Array.from(document.getElementsByClassName("resposta"));
 const contadorDePerguntasTextoEl = document.getElementById("contador");
@@ -17,7 +16,7 @@ const pontosEl = document.getElementById("pontos");
 
 let contadorDePergunta;
 let pontos;
-const MAX = 20; //máximo de perguntas
+const MAX = 10; //máximo de perguntas
 let aceitaRespostas;
 
 startQuiz = () => {
@@ -44,10 +43,9 @@ const perguntaAleatoria = (objeto, n) => {
 };
 
 const novaPergunta = () => {
-    if (perguntasDisp.length == 0) {
-        alert("Fim do Quiz");
+    if (perguntasDisp.length == 0) {  
+        
         return;
-
         //criar função para retornar para o perfil do usuario
     }
 
@@ -75,7 +73,7 @@ const novaPergunta = () => {
             let estado = "Errado";
 
             if (respostaDefinida == perguntaAtual.resposta) {
-                pontos++;
+                pontos = pontos + 10; 
                 pontosEl.innerHTML = pontos;
                 estado = "Certo";
             }

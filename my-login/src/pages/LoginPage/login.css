@@ -1,36 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
 html {
-    background-color: darkgreen;
+    background-color: rgb(32, 32, 32);
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100%;
+    font-family: 'PT Sans', sans-serif;
 }
-
-/* TEXTO !FAÇA SEU LOGIN! */
 
 #login h1 {
-    font-size: 20px;
+    font-size: 2rem;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 60px;
 }
-
-/* FORM DE LOGIN E BOTÃO */
 
 #login {
     overflow: hidden;
     background-color: white;
     padding: 50px 50px 50px 50px;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-
-
 #login input {
-    
     display: block;
-    border: none;
-    border-bottom: 1px dotted black;
+    border: 1px solid black;
     font-size: 19px;
     background: white;
     width: 316px;
@@ -41,7 +41,6 @@ html {
 
 input:focus {
     outline: none;
-    
 }
 
 .info {
@@ -88,22 +87,22 @@ input:focus {
 
 /* BOTAO REGISTRAR */
 
-.registrar {
-    margin-top: 60px;
+.actions {
     text-align: center;
 }
 
-.registrar button{
+.actions button{
     margin: 0px;
 }
 
-.registrar p{
+.actions p{
     color: darkgreen;
     font-size: 15px;
     text-align: center;
     margin: 0px;
 }
 
-.registrar button:hover p{
+button:hover {
+    background-color: rgb(111, 0, 255);
     color: black;
 }
