@@ -4,35 +4,50 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="estilos/login.css">
-        <script src="https://kit.fontawesome.com/793028066c.js" crossorigin="anonymous"></script>       
-        <title>Login</title>
+        <script src="https://kit.fontawesome.com/793028066c.js" crossorigin="anonymous"></script>
         <link rel="icon" href="imgs/Logo_TP2.png" />
-</head>
+    </head>
     </head>
     <body>
-        <form id="login"> 
-            <h1>Faça seu login</h1>
-            <div class="info" autocomple="off" id="username">
-                <input type="text" placeholder="Nome" name="username" required>
-            </div>
-    
-            <div class="info" id="password">
-                <input type="password" placeholder="Senha" name="password" required>
-            </div> 
-            
-            <button id="cont" type="submit">
-                <div class="logar"> 
-                    <strong>CONTINUAR</strong>
-                </div>
-            </button>
-            
-            <div class="registrar"> 
-                <button>
-                    <p>Registre-se ▶</p>
-                </button>
-            </div>
-        </form>
+        <div class="center">
+              <h1>Login</h1>
+                </br>
+              <div class="inputbox">
+                <input id="nome-usuarioL" type="text" required/>
+                <span>Usúario</span>
+              </div>
 
+              <div class="inputbox">
+                <input id="senhaL" type="password" required/>
+                <span>Senha</span>
+              </div>
+
+              <div class="inputbox">
+                <input type="button" value="Entrar" id="btn-login">
+              </div>
+            </div>
+            <div class="center" id="regis">
+                <div>
+                    <h1>Registre-se</h1>
+                    </br>
+                    <div class="inputbox">
+                        <input id="nome-usuarioR" type="text" required/>
+                    <span>Usúario</span>
+                    </div>
+                    <div class="inputbox">
+                        <input id="senhaR" type="password" required/>
+                    <span>Senha</span>
+                    </div>
+                    <div class="inputbox">
+                        <input id="senhaRR" type="password" required/>
+                        <span>Reescreva a senha</span>
+                    </div>
+                    <div class="inputbox">
+                        <input type="button" value="Registrar" id="btn-register">     
+                    </div>
+                </div>
+            </div>
         <script src="scripts/login.js"></script>
+        <script src="scripts/pontos.js"></script>
     </body>
 </html>

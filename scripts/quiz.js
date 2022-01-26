@@ -44,9 +44,8 @@ const perguntaAleatoria = (objeto, n) => {
 
 const novaPergunta = () => {
     if (perguntasDisp.length == 0) {  
-        
-        return;
-        //criar função para retornar para o perfil do usuario
+        localStorage.setItem('pontosAgora', pontos);
+        return window.location.assign('final.html');
     }
 
     contadorDePergunta++;

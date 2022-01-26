@@ -63,13 +63,29 @@ h2 {
     transform: scale(1.04);
 }
 
-.btn[disabled]:hover {
-    cursor: not-allowed;
-    box-shadow: none;
-    transform: none;
-}
-
-.fa-user, .fa-users {
+.fa-user, .fa-users, .fa-gamepad, .fa-car-crash {
     font-size: 2rem;
     margin-left: 1.5rem;
 }
+
+#pontosFinais {
+    text-align: center;
+}
+
+#seu-nome {
+    color: whitesmoke;
+}
+
+input {
+    margin-bottom: 1rem;
+    width: 30rem;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.final-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
