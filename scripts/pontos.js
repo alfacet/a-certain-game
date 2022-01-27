@@ -5,9 +5,9 @@ const scoreNow = localStorage.getItem('pontosAgora');
 
 const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
-const MAX_HIGH_SCORES = 1;
+const MAX = 2
 
-finalScore.innerText = scoreNow;
+finalScore.innerHTML = scoreNow;
 
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
@@ -29,6 +29,8 @@ saveHighScore = e => {
 
     highScores.splice(5);
 
-    localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('/');
+    localStorage.setItem('highScores', JSON.stringify(highScores))
+    window.location.assign('ranking.html');
+
+    
 }
