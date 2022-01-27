@@ -26,7 +26,6 @@ function verificar_login(username, password) {
 
         if (verificado == 2)
             return i;
-            break;
     }
     return "nao existe";
     
@@ -58,7 +57,8 @@ function carregar() {
 
     let y = localStorage.getItem('usuarios');
     y = JSON.parse(y);
-    usuario = y;
+    if (y != null)
+        usuario = y;
 }
 
 botaoL.addEventListener("click", logar);
