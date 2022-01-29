@@ -5,7 +5,8 @@ function arquivoJson() {
     file.send();
     return file.response;
 } //carrega banco de perguntas do json
-  
+
+
 let perguntas = JSON.parse(arquivoJson());
   
 const perguntaEl = document.getElementById("pergunta-questao");
@@ -45,7 +46,8 @@ const perguntaAleatoria = (objeto, n) => {
 const novaPergunta = () => {
     if (perguntasDisp.length == 0) {  
         localStorage.setItem('pontosAgora', pontos);
-        return window.location.assign('final.html');
+        adicionar_pontos(pontos);
+        return window.location.assign('ranking.html');
     }
 
     contadorDePergunta++;

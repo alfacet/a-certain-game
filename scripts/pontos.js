@@ -1,36 +1,23 @@
-const username = document.querySelector('#username');
-const saveScoreBtn = document.querySelector('#saveScoreBtn');
-const finalScore = document.querySelector('#finalScore');
-const scoreNow = localStorage.getItem('pontosAgora');
+let usuarios = [];
+let quantidade_pts = localStorage.getItem('pontosAgora');
+let usuario_atual;
+carregar();
 
-const highScores = JSON.parse(localStorage.getItem('highScores')) || []
 
-const MAX = 2
+function carregar() {
 
-finalScore.innerHTML = scoreNow;
+    let y = localStorage.getItem('usuarios');
+    usuario_atual = sessionStorage.getItem('usuario_atual');
+    y = JSON.parse(y);
+    if (y != null)
+        usuarios = y;
+}
 
-username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value;
-})
+function adicionar_pontos(pontos) {
+    usuarios[usuario_atual].pontos += pontos;
+    salvar();
+}
 
-saveHighScore = e => {
-    e.preventDefault();
-
-    const score = {
-        score: scoreNow,
-        name: username.value
-    }
-
-    highScores.push(score);
-
-    highScores.sort((a,b) => {
-        return b.score - a.score;
-    })
-
-    highScores.splice(5);
-
-    localStorage.setItem('highScores', JSON.stringify(highScores))
-    window.location.assign('ranking.html');
-
-    
+function salvar() {
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
 }
