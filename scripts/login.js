@@ -5,6 +5,7 @@ let botaoL = document.getElementById('btn-login');
 let botaoR = document.getElementById('btn-register');
 
 let usuario_atual = "NAO LOGADO";
+sessionStorage.setItem('usuario_atual', usuario_atual);
 let verificado;
 
 function verificar_login(username, password) {
@@ -33,8 +34,7 @@ function logar() {
     if (x != "nao existe") {
         usuario_atual = x;
         sessionStorage.setItem('usuario_atual', usuario_atual);
-        window.alert("LOGADO, usuario:" + usuario_atual);
-        window.location.assign('perfil.html');
+        window.location.assign('index.html');
     }
     else window.alert("NAO EXISTE")
 
@@ -70,7 +70,7 @@ function registrar() {
     
     
     if (SenhaR == SenhaRR) {
-        usuario.push({nome: UsuarioR, senha: SenhaR, pontos: 0});
+        usuario.push({nome: UsuarioR, senha: SenhaR, pontos: 0, foto_perfil: 0});
         salvar();
         window.alert("CONTA CRIADA")
     }

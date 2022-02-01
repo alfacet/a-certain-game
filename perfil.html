@@ -12,17 +12,20 @@
     <body id="divgeral">
         <div class="container mt-4 mb-4 p-3 d-flex justify-content-center "> 
             <div class="card p-4 "> 
-                <div class=" image d-flex flex-column justify-content-center align-items-center"> 
-                    <button class="btn btn-secondary"> <img src="imgs/random.png" id="fotoPerfil" height="100" width="100"/></button>
+                <div id="perf" class="image d-flex flex-column justify-content-center align-items-center"> 
+                    <img src="imgs/random.png" id="fotoPerfil" height="100" width="100"/>
+                    <h2>Escolha alguém:</h2>
                     <div>
-                        <input type="radio" name = "ftperfil" value ="Foto1">Imagem 1
-                        <input type="radio" name = "ftperfil" value ="Foto2">Imagem 2
-                        <input type="radio" name = "ftperfil" value ="Foto3">Imagem 3
-                    </br>
-                        <input type="radio" name = "ftperfil" value ="Foto4">Imagem 4
-                        <input type="radio" name = "ftperfil" value ="Foto5">Imagem 5
-                        <input type="radio" name = "ftperfil" value ="Foto6">Imagem 6
-                    </div>  
+                        <select id="pers_perfil">
+                            <option value="0">Chico Barney</option>
+                            <option value="1">Jorge Baltazar</option>
+                            <option value="2">Clovis Borges</option>
+                            <option value="3">Valda Valdir</option>
+                            <option value="4">Rosana Rosandi</option>
+                            <option value="5">Aparecida daCida</option>
+                            <option value="6">Doge</option>
+                        </select>
+                    </div>
                     <span class="name mt-3" id = "Nusuario">Nome do Usuario</span>
                     <div class="d-flex flex-row justify-content-center align-items-center gap-2">   
                     </div> 
@@ -38,6 +41,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
         <script src="scripts/verificar.js"></script>
         <script src="scripts/perfil.js"></script>
-        <script src="scripts/ranking.js"></script>
     </body>
 </html>
