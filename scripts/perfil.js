@@ -16,4 +16,5 @@ function carregar() {
     pontos.innerHTML = usuarios[usuario_atual].pontos;
 }
 
+let fotoPerfilEl = document.querySelector("#fotoPerfil");
 
