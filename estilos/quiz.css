@@ -48,3 +48,19 @@ p, #pergunta-questao {
     padding: 2rem;
     width: 100%;
 }
+
+/*RESPONSIVIDADE*/
+/*Para Mobile*/
+@media screen and (max-width: 600px) {
+    header {
+        zoom: 70%;
+        width: 100%;
+    }
+    main {
+        zoom: 70%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
 
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -88,3 +89,4 @@ input {
     flex-direction: column;
     align-items: center;
 }
+
