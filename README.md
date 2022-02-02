@@ -1,2 +1,2 @@
-# the-quiz
-Projeto de trabalho prático de programação web do CEFET-MG. 
+# O Jogo
+Você perdeu o jogo
