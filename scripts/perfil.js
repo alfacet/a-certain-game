@@ -1,30 +1,34 @@
 let nome_de_usuario = document.querySelector("#Nusuario");
 let pontos = document.querySelector("#Npontos");
-let usuarios = [];
-let usuario_atual;
 let fotoPerfilEl = document.querySelector("#fotoPerfil");
 let selecionar_foto = document.querySelector("#pers_perfil");
+let EditarEl = document.querySelector("#Editar");
 
+let y = localStorage.getItem('usuarios');
+let usuarios = JSON.parse(y);
+let usuario_atual = sessionStorage.getItem('usuario_atual');
+let personagem;
 
-function carregar() {
-    let y = localStorage.getItem('usuarios');
-    usuario_atual = sessionStorage.getItem('usuario_atual');
-    y = JSON.parse(y);
-    if (y != null)
-        usuarios = y;
-    nome_de_usuario.innerHTML = usuarios[usuario_atual].nome;
-    pontos.innerHTML = usuarios[usuario_atual].pontos;
-    mudar_foto_perfil(usuarios[usuario_atual].personagem);
+nome_de_usuario.innerHTML = usuarios[usuario_atual].nome;
+pontos.innerHTML = usuarios[usuario_atual].pontos;
+let op = 0;
+mudar_foto_perfil();
+op = 1;
+
+selecionar_foto.addEventListener("change", mudar_foto_perfil);
+
+function salvar(){
+    usuarios[usuario_atual].foto_perfil = personagem;
+    localStorage.setItem('usuarios', JSON.stringify(usuarios));
 }
 
+function mudar_foto_perfil() {
 
-
-
-
-
-function mudar_foto_perfil(personagem) {
-    
-    if(personagem == 0){
+    if (op == 0)
+        personagem = usuarios[usuario_atual].foto_perfil;
+    else
+        personagem = selecionar_foto.value;
+    if (personagem == 0){
         fotoPerfilEl.src = "imgs/Perfil1.png";
 
     }
@@ -50,12 +54,11 @@ function mudar_foto_perfil(personagem) {
     }
     else if(personagem == 6){
         fotoPerfilEl.src = "imgs/Perfil7.png";
-
     }
-
-    usuarios[usuario_atual].foto_perfil = personagem;
-    localStorage.setItem('usuarios', JSON.stringify(usuarios));
+    salvar();
 }
 
-carregar();
-selecionar_foto.addEventListener("change", mudar_foto_perfil(selecionar_foto.value));
+EditarEl.addEventListener("click", logar) {
+
+};
+

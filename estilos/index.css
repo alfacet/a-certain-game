@@ -69,24 +69,3 @@ h2 {
     margin-left: 1.5rem;
 }
 
-#pontosFinais {
-    text-align: center;
-}
-
-#seu-nome {
-    color: whitesmoke;
-}
-
-input {
-    margin-bottom: 1rem;
-    width: 30rem;
-    font-size: 2rem;
-    padding: 1.5rem;
-}
-
-.end-form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-

@@ -51,16 +51,32 @@ p, #pergunta-questao {
 
 /*RESPONSIVIDADE*/
 /*Para Mobile*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     header {
-        zoom: 70%;
+        zoom: 50%;
         width: 100%;
     }
+
     main {
-        zoom: 70%;
+        zoom: 50%;
         width: 100%;
+    }
+
+    .ant {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
     }
 }
+
+@media screen and (max-width: 500px) {
+    header {
+        zoom: 30%;
+        width: 100%;
+    }
+
+    main {
+        zoom: 30%;
+        width: 100%;
+    }
+}
+

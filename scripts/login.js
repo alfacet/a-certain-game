@@ -3,8 +3,12 @@ carregar();
 
 let botaoL = document.getElementById('btn-login');
 let botaoR = document.getElementById('btn-register');
+let pLogar = document.getElementById('avisoLogar');
+let pRegistrar = document.getElementById('avisoRegistrar');
+pLogar.innerHTML = '';
+pRegistrar.innerHTML = '';
 
-let usuario_atual = "NAO LOGADO";
+let usuario_atual = "Não logado";
 sessionStorage.setItem('usuario_atual', usuario_atual);
 let verificado;
 
@@ -17,15 +21,14 @@ function verificar_login(username, password) {
         verificado = 0;
 
         if (usuario[i].nome == username) verificado++;
-
         if (usuario[i].senha == password) verificado++;
-
         if (verificado == 2) return i;
     }
 
     return "nao existe";
     
 }
+
 function logar() {
     let username = document.getElementById('nome-usuarioL').value;
     let password = document.getElementById('senhaL').value;
@@ -35,8 +38,10 @@ function logar() {
         usuario_atual = x;
         sessionStorage.setItem('usuario_atual', usuario_atual);
         window.location.assign('index.html');
+        return;
     }
-    else window.alert("NAO EXISTE")
+
+    pLogar.innerHTML = 'Esse usuário não existe';
 
 }
 
@@ -47,8 +52,8 @@ function salvar() {
 function carregar() {
     let y = localStorage.getItem('usuarios');
     y = JSON.parse(y);
-    if (y != null)
-        usuario = y;
+
+    if (y != null) usuario = y;
 }
 
 
@@ -56,25 +61,25 @@ botaoL.addEventListener("click", logar);
 botaoR.addEventListener("click", registrar);
 
 function registrar() {
-
     let UsuarioR = document.querySelector("#nome-usuarioR").value;
     let SenhaR = document.querySelector("#senhaR").value;
     let SenhaRR = document.querySelector("#senhaRR").value;
 
     for (i = 0; usuario.length > i; i++) {
         if (UsuarioR == usuario[i].nome) {
-            window.alert("Uma conta com esse nome ja existe");
+            pRegistrar.innerHTML = 'Uma conta com esse nome já existe'
             return 0;
         }
     }
     
-    
     if (SenhaR == SenhaRR) {
         usuario.push({nome: UsuarioR, senha: SenhaR, pontos: 0, foto_perfil: 0});
         salvar();
-        window.alert("CONTA CRIADA")
+        pRegistrar.innerHTML = 'Sua conta foi criada'
     }
 
-    else window.alert("As senhas não são iguais");
+    pRegistrar.innerHTML = 'As senhas são diferentes'
 }
+
+
 

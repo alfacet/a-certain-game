@@ -10,23 +10,23 @@
     </head>
     </head>
     <body>
-        <div class="center">
-              <h1>Login</h1>
-                </br>
-              <div class="inputbox">
-                <input id="nome-usuarioL" type="text" required/>
-                <span>Usúario</span>
-              </div>
-
-              <div class="inputbox">
-                <input id="senhaL" type="password" required/>
-                <span>Senha</span>
-              </div>
-
-              <div class="inputbox">
-                <input type="button" value="Entrar" id="btn-login">
-              </div>
+        <main>
+            <div class="center">
+                <h1>Login</h1>
+                <div class="inputbox">
+                    <input id="nome-usuarioL" type="text" required/>
+                    <span>Usúario</span>
+                </div>
+                <div class="inputbox">
+                    <input id="senhaL" type="password" required/>
+                    <span>Senha</span>
+                </div>
+                <div class="inputbox">
+                    <input type="button" value="Entrar" id="btn-login">
+                </div>
+                <p id="avisoLogar"></p>
             </div>
+            <br>
             <div class="center" id="regis">
                 <div>
                     <h1>Registre-se</h1>
@@ -46,8 +46,10 @@
                     <div class="inputbox">
                         <input type="button" value="Registrar" id="btn-register">     
                     </div>
+                    <p id="avisoRegistrar"></p>
                 </div>
             </div>
+        </main>
         <script src="scripts/login.js"></script>
     </body>
 </html>

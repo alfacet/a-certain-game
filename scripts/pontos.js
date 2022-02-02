@@ -5,7 +5,6 @@ carregar();
 
 
 function carregar() {
-
     let y = localStorage.getItem('usuarios');
     usuario_atual = sessionStorage.getItem('usuario_atual');
     y = JSON.parse(y);

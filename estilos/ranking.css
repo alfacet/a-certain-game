@@ -95,3 +95,22 @@ h1 {
 p {
     text-align: center;
 }
+
+ul {
+    padding-left: 0px;
+}
+
+li {
+    margin-bottom: 30px;
+    list-style: none;
+    text-align: center
+}
+
+#botao_home{
+   float:right;
+   padding: 8px;
+   border-radius: 10%;
+   color: black;
+   margin-bottom: 25px;
+   margin-right: 25px;
+}
