@@ -25,8 +25,7 @@ function verificar_login(username, password) {
         if (verificado == 2) return i;
     }
 
-    return "nao existe";
-    
+    return "nao existe"; 
 }
 
 function logar() {
@@ -37,12 +36,11 @@ function logar() {
     if (x != "nao existe") {
         usuario_atual = x;
         sessionStorage.setItem('usuario_atual', usuario_atual);
-        window.location.assign('index.html');
+        window.location.assign('quiz.html');
         return;
     }
 
     pLogar.innerHTML = 'Esse usuário não existe';
-
 }
 
 function salvar() {
@@ -67,7 +65,7 @@ function registrar() {
 
     for (i = 0; usuario.length > i; i++) {
         if (UsuarioR == usuario[i].nome) {
-            pRegistrar.innerHTML = 'Uma conta com esse nome já existe'
+            pRegistrar.innerHTML = 'Uma conta com esse nome já existe';
             return 0;
         }
     }
@@ -75,10 +73,11 @@ function registrar() {
     if (SenhaR == SenhaRR) {
         usuario.push({nome: UsuarioR, senha: SenhaR, pontos: 0, foto_perfil: 0});
         salvar();
-        pRegistrar.innerHTML = 'Sua conta foi criada'
+        pRegistrar.innerHTML = 'Sua conta foi criada';
+        pRegistrar.style.color = 'green';
     }
 
-    pRegistrar.innerHTML = 'As senhas são diferentes'
+    else pRegistrar.innerHTML = 'As senhas são diferentes';
 }
 
 

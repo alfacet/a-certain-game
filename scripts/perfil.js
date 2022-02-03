@@ -58,7 +58,7 @@ function mudar_foto_perfil() {
     salvar();
 }
 
-EditarEl.addEventListener("click", logar) {
+//EditarEl.addEventListener("click", logar) {
 
-};
+//};
 
