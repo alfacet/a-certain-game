@@ -60,11 +60,16 @@ function mudar_foto_perfil() {
 
 
 let aparecer = 0;
-let h2El = document.getElementsByTagName('h2');
-function aparecerEditar(){
+let h2El = document.getElementById("h2");
+h2El.style.display = "none";
+selecionar_foto.style.display = "none";
+
+EditarEl.addEventListener("click", aparecerEditar);
+
+function aparecerEditar() {
     if (aparecer) {
         h2El.style.display = "none";
-        selecionar_foto.style.display = "none";
+        selecionar_foto.style.display = "none";         
         aparecer = 0;
     }
     else {
@@ -73,5 +78,3 @@ function aparecerEditar(){
         aparecer = 1;
     }
 }
-
-EditarEl.addEventListener("click", aparecerEditar);
