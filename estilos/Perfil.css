@@ -99,7 +99,7 @@ hr .new1 {
 }
 
 input{
-    color:re;
+    color:red;
 }
 
 .btn {
@@ -118,4 +118,10 @@ input{
     cursor: pointer;
     transition: transform 150ms;
     transform: scale(1.04);
+}
+
+.pages {
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
 }

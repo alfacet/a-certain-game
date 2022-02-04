@@ -50,3 +50,8 @@ body {
 strong {
     font-size: 2rem;
 }
+
+.fa-times:hover {
+    color: red;
+}
+
