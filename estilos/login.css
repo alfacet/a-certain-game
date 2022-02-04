@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 html {
     background-color: rgb(32, 32, 32);
     background-size: cover;
@@ -13,7 +16,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .center {
@@ -64,7 +67,7 @@ body {
     left: 20px;
     font-size: 1.7em;
     transition: 0.6s;
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .center .inputbox input:focus ~ span,

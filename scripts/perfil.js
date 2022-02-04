@@ -24,37 +24,37 @@ function salvar(){
 
 function mudar_foto_perfil() {
 
-    if (op == 0)
-        personagem = usuarios[usuario_atual].foto_perfil;
-    else
-        personagem = selecionar_foto.value;
+    if (op == 0) personagem = usuarios[usuario_atual].foto_perfil;
+    else personagem = selecionar_foto.value;
+
     if (personagem == 0){
         fotoPerfilEl.src = "imgs/Perfil1.png";
-
     }
-    else if(personagem == 1){
+
+    else if (personagem == 1){
         fotoPerfilEl.src = "imgs/Perfil3.png";
-
     }
-    else if(personagem == 2){
+
+    else if (personagem == 2){
         fotoPerfilEl.src = "imgs/Perfil6.png";
-
     }
-    else if(personagem == 3){
+
+    else if (personagem == 3){
         fotoPerfilEl.src = "imgs/Perfil4.png";
-
     }
-    else if(personagem == 4){
+
+    else if (personagem == 4){
         fotoPerfilEl.src = "imgs/Perfil2.png";
-
     }
-    else if(personagem == 5){
+
+    else if (personagem == 5){
         fotoPerfilEl.src = "imgs/Perfil5.png";
-
     }
+
     else if(personagem == 6){
         fotoPerfilEl.src = "imgs/Perfil7.png";
     }
+    
     salvar();
 }
 

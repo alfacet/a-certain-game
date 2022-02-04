@@ -5,4 +5,5 @@ function verificar_login() {
         window.location.assign('login.html');
     }
 }
+
 verificar_login();

@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="estilos/index.css">
+        <link rel="stylesheet" href="estilos/info.css">
         <script src="https://kit.fontawesome.com/793028066c.js" crossorigin="anonymous"></script>
         <title>teste</title>
         <link rel="icon" href="imgs/Logo_TP2.png" />
@@ -11,11 +12,25 @@
     <body>
         <div class="container">
             <div id="home">
-                <h1>O jogo (nome criativo para um jogo)<i class="fas fa-car-crash"></i></h1>
-                <a href="quiz.html" class="btn">Jogar<i class="fas fa-gamepad"></i></a>
+                <h1>O jogo (nome criativo para um jogo)</h1>
                 <a href="perfil.html" id="perfil-btn" class="btn">Perfil<i class="fas fa-user"></i></a>
                 <a href="ranking.html" id="highscore-btn" class="btn">Pontuação<i class="fas fa-users"></i></a>
+                <a onclick="activePopup()" id="about" class="btn">Sobre o projeto :)</a>
             </div>
         </div>
+        <div class="popup">
+            <div onclick="exitPopup()" class="exit"><i class="fas fa-times"></i></div>
+            <div class="content">
+                <div class="header">
+                    <h2 id="h2"></h2>
+                </div>
+                <div class="main">
+                    <p id="p">
+                        Basicamente, o projeto consiste em um simples joguinho de perguntas e respostas. Tudo é feito dinamicamente com JavaScript. Começando do começo, o JS principal é o quiz, que seleciona a quantidade de perguntas que o programador julga necessário a ser respondidas. Há, no arquivo banco.json, todas as perguntas e o const MAX define o máximo de perguntas a serem sorteadas desse banco. A cada pergunta acertada, o usuário ganha 10 pontinhos. Logando na aplicação, o jogador poderá, através do webstorage, guardar seu nome de usuário de a quantidade total dos seus pontos, que poderá ser vista tanto no ranking – com usuários genéricos – quanto no seu perfil. <strong>Faça o login na página de perfil antes de jogar</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/info.js"></script>
     </body>
 </html>

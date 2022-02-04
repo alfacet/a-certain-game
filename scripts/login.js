@@ -36,7 +36,7 @@ function logar() {
     if (x != "nao existe") {
         usuario_atual = x;
         sessionStorage.setItem('usuario_atual', usuario_atual);
-        window.location.assign('quiz.html');
+        window.location.assign('perfil.html');
         return;
     }
 
