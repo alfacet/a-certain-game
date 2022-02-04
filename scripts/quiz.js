@@ -17,7 +17,7 @@ const pontosEl = document.getElementById("pontos");
 
 let contadorDePergunta;
 let pontos;
-const MAX = 20; //máximo de perguntas
+const MAX = 15; //máximo de perguntas
 let aceitaRespostas;
 
 startQuiz = () => {
