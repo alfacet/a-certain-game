@@ -125,3 +125,7 @@ input {
     display: flex;
     justify-content: space-between;
 }
+
+#escolhaH2 {
+    display: block;
+}

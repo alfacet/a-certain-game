@@ -58,7 +58,20 @@ function mudar_foto_perfil() {
     salvar();
 }
 
-//EditarEl.addEventListener("click", logar) {
 
-//};
+let aparecer = 0;
+let h2El = document.getElementsByTagName('h2');
+function aparecerEditar(){
+    if (aparecer) {
+        h2El.style.display = "none";
+        selecionar_foto.style.display = "none";
+        aparecer = 0;
+    }
+    else {
+        h2El.style.display = "block";
+        selecionar_foto.style.display = "block";
+        aparecer = 1;
+    }
+}
 
+EditarEl.addEventListener("click", aparecerEditar);
